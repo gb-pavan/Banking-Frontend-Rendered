@@ -7,7 +7,7 @@ import Cookies from 'js-cookie';
 const LoginForm = (props) => {
     const {setShowBanker,setShowLogin, setBankerData, setSelectedCustomer} = props
     const [activeTab, setActiveTab] = useState("banker");
-    const [username, setUsername] = useState("");
+    const [userInput, setUserInput] = useState("");
     const [password, setPassword] = useState("");
     const [errorMsg, setErrorMsg] = useState("");
     const [showErrorMsg, setShowErrorMsg] = useState(false);
@@ -24,7 +24,7 @@ const LoginForm = (props) => {
     };
   
     const handleUsernameChange = (event) => {
-      setUsername(event.target.value);
+      setUserInput(event.target.value);
     };
   
     const handlePasswordChange = (event) => {
@@ -34,13 +34,13 @@ const LoginForm = (props) => {
     const handleSubmit = async (event) => {
       event.preventDefault();
       const StakeHolderCredentials = {
-        username,
+        userInput,
         password,activeTab
       }
       console.log(StakeHolderCredentials)
 
 
-      const response = await fetch('http://localhost:3005/login', {
+      const response = await fetch('https://bank-application-backend2-author.onrender.com/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -89,11 +89,11 @@ const LoginForm = (props) => {
   
     return (
       <div className='login-container'>
-        <h1 className='bank-name'>Welcome To JilJil JigaJiga Bank</h1>
+        <h1 className='bank-name'>Welcome To My Bank</h1>
         <div className="login-form">
           <StakeHolders activeTab={activeTab} onTabClick={handleTabClick} />
           <LoginFormFields
-            username={username}
+            userInput={userInput}
             onUsernameChange={handleUsernameChange}
             password={password}
             onPasswordChange={handlePasswordChange}

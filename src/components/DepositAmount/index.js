@@ -20,14 +20,13 @@ const DepositAmount = props => {
       'depositTime':depositTime,
       'fromAccountNum':fromAccountNum,
       'toAccountNum':toAccountNum,
-      'depositAmount':depositAmount,
-      'toAccountHolder':toAccountHolder
+      'depositAmount':depositAmount
     }
     console.log('depositData now checking',depositData)
 
     const webToken = Cookies.get('myToken');
 
-      fetch('http://localhost:3005/deposit', {
+      fetch('https://bank-application-backend2-author.onrender.com/deposit', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

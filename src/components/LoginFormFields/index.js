@@ -1,6 +1,6 @@
 import './index.css'
 
-const LoginFormFields = ({ username, onUsernameChange, password, onPasswordChange, onSubmit,activeTab,errorMsg,showErrorMsg }) => {
+const LoginFormFields = ({ userInput, onUsernameChange, password, onPasswordChange, onSubmit,activeTab,errorMsg,showErrorMsg }) => {
     return (
         
       <form onSubmit={onSubmit} className="form-field">
@@ -10,7 +10,7 @@ const LoginFormFields = ({ username, onUsernameChange, password, onPasswordChang
           <input
             type="text"
             id="username"
-            value={username}
+            value={userInput}
             onChange={onUsernameChange}
           />
         </div>

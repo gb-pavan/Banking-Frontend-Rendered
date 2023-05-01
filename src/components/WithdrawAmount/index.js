@@ -40,7 +40,7 @@ const WithdrawAmount = props => {
     })*/
 
 
-    fetch('http://localhost:3005/withdraw', {
+    fetch('https://bank-application-backend2-author.onrender.com/withdraw', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

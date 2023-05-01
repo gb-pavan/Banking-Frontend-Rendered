@@ -15,7 +15,7 @@ const FetchTransactionDetails = props => {
     const method = 'POST';
 
 
-    const customerData = useFetch('http://localhost:3005/gettransactiondetails',method,isAfterLogin,selectedCustomer.account_number)
+    const customerData = useFetch('https://bank-application-backend2-author.onrender.com/gettransactiondetails',method,isAfterLogin,selectedCustomer.account_number)
 
     console.log('customerData after fetching using UseFetch',customerData)
 

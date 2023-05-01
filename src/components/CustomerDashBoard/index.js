@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import BasicDetails from '../BasicDetails';
 import DepositAmount from '../DepositAmount';
 import FetchTransactionDetails from '../FetchTransactionDetails';

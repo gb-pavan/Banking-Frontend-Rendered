@@ -25,7 +25,7 @@ const CustomerList = ({ customers,isAfterLogin }) => {
         <thead>
           <tr>
             <th>Customer Name</th>
-            <th>Opened Account On</th>
+            <th>Account Number</th>
             <th>Account Balance</th>
           </tr>
         </thead>

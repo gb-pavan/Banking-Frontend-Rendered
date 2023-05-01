@@ -10,6 +10,8 @@ function App() {
   const [bankerData,setBankerData] = useState([])
   const [selectedCustomer,setSelectedCustomer] = useState([])
 
+  console.log('selectedCustomer in app.js',selectedCustomer)
+
   return (
     <div className="App">      
       {showLogin ? <LoginForm setShowBanker={setShowBanker} setShowLogin={setShowLogin} setBankerData={setBankerData} setSelectedCustomer={setSelectedCustomer} /> : (showBanker ? <CustomerDashBoard selectedCustomer={selectedCustomer} showLogin={showLogin} /> : <BankerDashBoard bankerData={bankerData} showLogin={showLogin} />)}
