@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   background-image: url('https://res.cloudinary.com/db9tsiti3/image/upload/v1682780135/2725714_mdgb0z.png');
+  background-size: cover;
   height: 100vh;
   width: 100vw;
 }

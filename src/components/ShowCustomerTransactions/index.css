@@ -1,0 +1,25 @@
+.customer-transaction-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    background-color: rgba(19, 17, 30, 0.5) ;/*light blue with 50% opacity */
+    overflow-x: auto;
+}
+
+.go-back-button{
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 576px) {
+    .customer-transaction-details{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 10px;                                                                                               
+    }
+}
+
+
+

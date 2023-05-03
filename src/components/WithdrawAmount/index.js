@@ -40,7 +40,7 @@ const WithdrawAmount = props => {
     })*/
 
 
-    fetch('https://bank-application-backend2-author.onrender.com/withdraw', {
+    fetch('https://banking-application-backend-render.onrender.com/withdraw', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ const WithdrawAmount = props => {
       
         <div className="background-style">
           <input type="number" placeholder="Enter Amount" value={amount} onChange={handleAmountChange} />
-          <button onClick={handleWithdraw}>Submit</button>
+          <button onClick={handleWithdraw}>Withdraw</button>
         </div>       
       
         {showMessage && <p className={messageClass}> {message} </p>}

@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     padding: 30px;
-    margin-top: 40px;
+    margin-top: 20px;
     border-radius: 20px;
 }
 .input-right-spacing{
@@ -34,4 +34,24 @@
     justify-content: center;
     align-items: center;
     background-color: transparent;
+}
+
+@media screen and (max-width: 576px) {
+    .withdraw-container{        
+        margin-top: -100px;        
+    }
+    .background-style{
+        width: 80vw;
+    }
+    .success-message{
+        color: greenyellow;
+        font-size: 12px;
+        text-align: center;
+    }
+    
+    .error-message{
+        color: lightcoral;
+        font-size: 12px;
+        text-align: center;
+    }
 }

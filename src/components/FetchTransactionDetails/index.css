@@ -1,0 +1,16 @@
+.customer-transaction-details{
+    /*background-color: rgb(255, 0, 247);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+    width: 60vw;
+}
+
+@media screen and (max-width: 576px) {
+    .customer-transaction-details{
+        background-color: transparent;
+        width: 100vw;
+        height: 100vh;
+    }
+}

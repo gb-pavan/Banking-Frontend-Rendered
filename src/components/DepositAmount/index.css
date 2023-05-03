@@ -1,18 +1,37 @@
-.deposit-container {
-    
-    margin: 0 auto;
+.deposit-container {    
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;    
     color: white;
     background-color: transparent;
-    margin-left: -140px;
+    height: 60vh;
+  }
+
+  .form-row{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .form-label{
+    padding-bottom: 10px;
   }
 
   .button-spacing{
-    margin-top: 65px;
+    margin-top: 20px;
     margin-left: 20px;
+  }
+
+  .deposit-amount-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .deposit-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .column-spacing {
@@ -22,4 +41,33 @@
   .set-coloring{
     color: lightgreen;
     text-align: center;
+  }
+
+  @media screen and (max-width: 576px) {
+    
+    .deposit-container {
+      font-size: 10px;
+      width: 100vw;
+      
+     
+    }
+    .form-row{
+      margin: 10px;
+    }
+
+    .deposit-amount-container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .deposit-button{
+      margin-left: -30px;
+      margin-bottom: -60px;
+    }
+    .set-coloring{
+      margin-left: 20px;
+    }
+    
   }

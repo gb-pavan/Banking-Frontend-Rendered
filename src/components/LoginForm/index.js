@@ -40,7 +40,7 @@ const LoginForm = (props) => {
       console.log(StakeHolderCredentials)
 
 
-      const response = await fetch('https://bank-application-backend2-author.onrender.com/login', {
+      const response = await fetch('https://banking-application-backend-render.onrender.com/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -64,7 +64,7 @@ const LoginForm = (props) => {
           setSelectedCustomer(data.rows);
         }
       }
-      else if (response.status === 401) {
+      else if (response.status === 402) {
         // User is not logged in, display the error message
         response.text().then(errorMessage => {
           console.log(errorMessage); 

@@ -19,4 +19,12 @@
 .tabs button:hover {
     cursor: pointer;
   }
+
+
+  @media screen and (max-width: 576px) {
+    .tabs {
+        width: 280%;
+        margin-top: -40px;
+    }
+  }
   

@@ -1,17 +1,9 @@
-.customers-list{
-    height: 60vh;
-    width: 80vw;
-    background-color: aqua;
-    overflow: scroll;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.all-customers-container{
-    width: 80vw;
-    overflow: scroll;
+.banker-view-details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
 }
 
 .all-customers-container {
@@ -23,22 +15,16 @@
     border: 1px solid black;
     padding: 10px;
   }
-  
+
   .user-row:hover {
-    background-color: rgba(54, 55, 55, 0.3);
+    background-color: rgba(204, 207, 207, 0.3);
     cursor: pointer;
   }
-  
-  .user-details {
-    margin-top: 20px;
-    padding: 10px;
-    border: 1px solid black;
-  }
 
-  .customer-transaction-details{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  @media screen and (max-width: 576px) {
+    .banker-view-details{
+      width: 100vw;
+    }
+
   }
   

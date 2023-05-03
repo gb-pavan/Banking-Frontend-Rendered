@@ -1,14 +1,18 @@
 .transaction-details{
-    color: white;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: white;*/
 }
 
-.column-names{
-    font-size: 20px;
+th {
+  border: 1px solid rgb(254, 249, 0);
 }
 
-.spacing{
-    padding-right: 30px;
-}
+
+
+
 /*
 .transaction-details {
     overflow-y: auto;
@@ -25,4 +29,20 @@
     height: 300px;
     overflow-y: auto;
   }*/
+
+  @media screen and (max-width: 576px) {
+    .transaction-details{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      font-size: 12px;
+      background-color: rgba(19, 17, 30, 0.5) ;
+      height: 60vh;
+      overflow: scroll;
+  }
+  .column-names{
+    font-size: 13px;
+}
+  }
   

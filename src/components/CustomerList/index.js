@@ -17,7 +17,7 @@ const CustomerList = ({ customers,isAfterLogin }) => {
   };
 
   return (
-    <div>
+    <div className='banker-view-details'>
       
 
       {!showDetails && (

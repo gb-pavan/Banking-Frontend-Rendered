@@ -2,18 +2,23 @@ import './index.css'
 
 const DisplayTransaction = props => {
     const {eachTransaction} = props
-    const creditedAmountStyle = eachTransaction.credited_amount ? { color: '#00FF00' } : {} 
-    const creditedByStyle = eachTransaction.credited_amount ? { color: '#00FF00' } : {}
-    const creditedTimeStyle = eachTransaction.credited_amount ? { color: '#00FF00' } : {}
-    const debitedAmountStyle = eachTransaction.debited_amount ? { color: 'yellow' } : {}
-    const debitedTimeStyle = eachTransaction.debited_amount ? { color: 'yellow' } : {}
+
+
+    const amount = (eachTransaction.credited_amount === '') ? eachTransaction.debited_amount : eachTransaction.credited_amount
+    const time = (eachTransaction.credited_amount === '') ? eachTransaction.debited_time : eachTransaction.credited_time
+    const creditedBy = (eachTransaction.credited_amount === '') ? '' : eachTransaction.credited_by
+    const depositedTo = (eachTransaction.credited_amount === '') ? eachTransaction.deposited_to : ''
+
+    const amountStyle = (eachTransaction.credited_amount === '') ? 'color-pink' :  'color-green'
+    
+    const amoutVar = amount + ' '
+    
     return (
         <tr key={eachTransaction.id}>
-            <td style={creditedAmountStyle}>{eachTransaction.credited_amount}</td>
-            <td style={creditedByStyle}>{eachTransaction.credited_by}</td>
-            <td style={creditedTimeStyle}>{eachTransaction.credited_time}</td>
-            <td style={debitedAmountStyle}>{eachTransaction.debited_amount}</td>
-            <td style={debitedTimeStyle}>{eachTransaction.debited_time}</td>
+            <td>{time}</td>
+            <td className={amountStyle} >{creditedBy}</td>
+            <td className={amountStyle} >{depositedTo}</td>
+            <td className={amountStyle} >{amoutVar}</td>
             <td>{eachTransaction.Remaining_balance}</td>
         </tr>
     )

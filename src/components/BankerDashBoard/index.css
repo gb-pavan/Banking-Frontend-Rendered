@@ -6,6 +6,13 @@
     align-items: center;
     height: 85vh;
     width: 85vw;
-    padding-top: 100px;
     color:orange;
+}
+
+@media screen and (max-width: 576px) {
+    .banker-dashboard{
+        width: 100vw;
+        height: 100vh;   
+    }
+
 }

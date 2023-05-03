@@ -12,14 +12,16 @@
     justify-content: center;
     align-items: center;
     /*background-color: orange;*/
-    background-color: rgba(173, 216, 230, 0.2); 
+    background-color:transparent; 
     height: 60vh;  
     width: 40vw;
     border-radius: 20px;
   }
 
   .bank-name{
-    font-size: 40px;
+    font-size: 35px;
     color:green;
+    text-align: center;
+    margin-top: 80px;
   }
   
